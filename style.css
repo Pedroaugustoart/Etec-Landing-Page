@@ -12,7 +12,7 @@
   --color-red-dark: #a31018;
 
   --color-text-main: #f5f5f5;
-  --color-text-muted: #a1a1aa;
+  --color-text-muted: #c4c4cc; /* Clareado para melhorar o contraste (WCAG) */
   
   /* Fonts */
   --font-heading: 'Outfit', sans-serif;
@@ -25,7 +25,7 @@
 
   /* Transitions */
   --transition-fast: 0.2s ease;
-  --transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 0.6s cubic-bezier(0.22, 1, 0.36, 1); /* Curva super suave */
 }
 
 * {
@@ -84,15 +84,18 @@ p {
 }
 
 .btn {
-  display: inline-block;
-  padding: 1rem 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.1rem 2.4rem; /* Maior respiro */
   border-radius: 8px;
   font-weight: 600;
   font-family: var(--font-heading);
   cursor: pointer;
-  transition: var(--transition-smooth);
+  transition: all var(--transition-smooth);
   border: none;
   font-size: 1rem;
+  gap: 8px;
 }
 
 .btn-primary {
@@ -103,8 +106,8 @@ p {
 
 .btn-primary:hover {
   background-color: var(--color-red-hover);
-  box-shadow: 0 6px 20px rgba(250, 35, 45, 0.5);
-  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(214, 24, 33, 0.4);
+  transform: translateY(-3px);
 }
 
 .btn-outline {
@@ -332,6 +335,72 @@ p {
 
 .diff-card p {
   font-size: 0.95rem;
+}
+
+/* Testimonials / Social Proof Section */
+.testimonials {
+  background-color: var(--color-black-matte);
+  border-top: 1px solid var(--glass-border);
+}
+
+.testi-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.testi-card {
+  background: var(--color-charcoal-dark);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  padding: 3rem;
+  position: relative;
+}
+
+.testi-card i {
+  position: absolute;
+  top: 2rem;
+  right: 2.5rem;
+  color: var(--glass-border);
+  width: 48px;
+  height: 48px;
+  opacity: 0.3;
+}
+
+.testi-card p {
+  font-size: 1.1rem;
+  font-style: italic;
+  margin-bottom: 2rem;
+  color: var(--color-text-main);
+  line-height: 1.8;
+  position: relative;
+  z-index: 2;
+}
+
+.testi-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.testi-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--color-red-primary);
+}
+
+.testi-name {
+  font-weight: 700;
+  font-size: 1rem;
+  color: white;
+}
+
+.testi-role {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
 }
 
 /* Products Section (Pisos) */

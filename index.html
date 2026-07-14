@@ -2,11 +2,12 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="Transforme seu imóvel com acabamentos de alto padrão. Especialistas em Eucafloor, Drywall e Gesso. Projetos exclusivos e atendimento humanizado.">
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ETEC Acabamentos - Showroom Virtual</title>
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -32,7 +33,7 @@
       <div class="hero-bg"></div>
       <div class="container reveal">
         <div class="hero-badge">
-          <i class="fas fa-star"></i> Alto Padrão em Acabamentos
+          <i data-lucide="star" style="color: var(--color-red-primary); width: 16px; height: 16px;"></i> Alto Padrão em Acabamentos
         </div>
         <h1>Sonhar com <strong>luxo</strong> é fácil.<br>Realizar, mais ainda.</h1>
         <p>Projetamos e construímos excelência do chão ao teto. O primeiro passo? Um estudo arquitetônico focado em valorizar seu imóvel com as melhores linhas Eucafloor, Drywall e Gesso.</p>
@@ -51,19 +52,51 @@
         
         <div class="diff-grid">
           <div class="diff-card">
-            <div class="diff-icon"><i class="fas fa-hammer"></i></div>
+            <div class="diff-icon"><i data-lucide="hammer"></i></div>
             <h3>Agilidade com Método</h3>
             <p>Planejamento por etapas cronograma físico-financeiro e detalhamento de cada fase. Entregamos a obra no prazo, sem atrasos e sem dores de cabeça.</p>
           </div>
           <div class="diff-card">
-            <div class="diff-icon"><i class="fas fa-user-tie"></i></div>
+            <div class="diff-icon"><i data-lucide="users"></i></div>
             <h3>Atendimento Individual e Humanizado</h3>
             <p>Canal de suporte direto com os especialistas da obra. Feedbacks programados e acompanhamento fotográfico do avanço de cada serviço.</p>
           </div>
           <div class="diff-card">
-            <div class="diff-icon"><i class="fas fa-clipboard-check"></i></div>
+            <div class="diff-icon"><i data-lucide="clipboard-check"></i></div>
             <h3>Garantia Pós-Obra</h3>
             <p>Entrega com manual final e certificados de garantia. Respaldo técnico integral para preservar a estética e qualidade do seu patrimônio.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Prova Social (Depoimentos) -->
+    <section class="testimonials section-padding">
+      <div class="container reveal">
+        <span class="section-subtitle">O que dizem nossos clientes</span>
+        <h2>A segurança de <strong>quem já transformou</strong></h2>
+        <div class="testi-grid">
+          <div class="testi-card">
+            <i data-lucide="quote"></i>
+            <p>"A equipe da ETEC superou nossas expectativas. O rebaixamento em gesso e a instalação do piso Eucafloor mudaram completamente a cara da nossa sala. O atendimento foi muito humano desde o primeiro contato."</p>
+            <div class="testi-author">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop" alt="Mariana Silva" class="testi-avatar">
+              <div>
+                <h4 class="testi-name">Mariana S.</h4>
+                <span class="testi-role">Projeto Residencial</span>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <i data-lucide="quote"></i>
+            <p>"O que mais me impressionou foi a pontualidade. Uma reforma limpa, com profissionais que realmente entendem de Drywall de alto padrão. Recomendo para quem não quer ter dores de cabeça."</p>
+            <div class="testi-author">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop" alt="Carlos Mendes" class="testi-avatar">
+              <div>
+                <h4 class="testi-name">Carlos M.</h4>
+                <span class="testi-role">Escritório Corporativo</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -97,19 +130,19 @@
             
             <div class="service-features">
               <div class="feature-item">
-                <i class="fas fa-check-circle"></i>
+                <i data-lucide="check-circle"></i>
                 <span>Execução Rápida</span>
               </div>
               <div class="feature-item">
-                <i class="fas fa-check-circle"></i>
+                <i data-lucide="check-circle"></i>
                 <span>Isolamento Acústico</span>
               </div>
               <div class="feature-item">
-                <i class="fas fa-check-circle"></i>
+                <i data-lucide="check-circle"></i>
                 <span>Projetos 3D</span>
               </div>
               <div class="feature-item">
-                <i class="fas fa-check-circle"></i>
+                <i data-lucide="check-circle"></i>
                 <span>Sustentabilidade</span>
               </div>
             </div>
@@ -129,19 +162,19 @@
             
             <div class="service-features">
               <div class="feature-item">
-                <i class="fas fa-lightbulb"></i>
+                <i data-lucide="lightbulb"></i>
                 <span>Sancas Iluminadas</span>
               </div>
               <div class="feature-item">
-                <i class="fas fa-layer-group"></i>
+                <i data-lucide="layers"></i>
                 <span>Molduras 3D</span>
               </div>
               <div class="feature-item">
-                <i class="fas fa-level-down-alt"></i>
+                <i data-lucide="corner-right-down"></i>
                 <span>Rebaixamento</span>
               </div>
               <div class="feature-item">
-                <i class="fas fa-gem"></i>
+                <i data-lucide="gem"></i>
                 <span>Alto Acabamento</span>
               </div>
             </div>
@@ -166,14 +199,14 @@
             
             <div class="contact-details">
               <div class="contact-item">
-                <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                <div class="contact-icon"><i data-lucide="phone"></i></div>
                 <div>
                   <small style="color: var(--color-text-muted);">WhatsApp / Telefone</small><br>
                   <strong>+55 (67) 99225-0875</strong>
                 </div>
               </div>
               <div class="contact-item">
-                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                <div class="contact-icon"><i data-lucide="mail"></i></div>
                 <div>
                   <small style="color: var(--color-text-muted);">E-mail Comercial</small><br>
                   <strong>ednelson.dhe@gmail.com</strong>
@@ -196,7 +229,7 @@
                 <input type="tel" class="form-control" placeholder="Telefone" required>
               </div>
               <div class="form-group">
-                <select class="form-control" required style="appearance: none; background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23a1a1aa%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'); background-repeat: no-repeat; background-position: right 1.2rem top 50%; background-size: 0.65rem auto;">
+                <select class="form-control" required style="appearance: none; background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23b5b5c3%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'); background-repeat: no-repeat; background-position: right 1.2rem top 50%; background-size: 0.65rem auto;">
                   <option value="" disabled selected>Selecione o segmento</option>
                   <option value="pisos">Pisos Laminados / Vinílicos</option>
                   <option value="drywall">Projeto em Drywall</option>
@@ -207,7 +240,7 @@
               <div class="form-group">
                 <textarea class="form-control" placeholder="Mensagem / Observações da obra" required></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">Transforme sua realidade com ETEC <i class="fas fa-arrow-right" style="margin-left: 8px;"></i></button>
+              <button type="submit" class="btn btn-primary">Transforme sua realidade com ETEC <i data-lucide="arrow-right"></i></button>
             </form>
           </div>
         </div>
@@ -226,5 +259,9 @@
     </footer>
 
     <script type="module" src="/main.js"></script>
+    <script>
+      // Initialize Lucide Icons
+      lucide.createIcons();
+    </script>
   </body>
 </html>

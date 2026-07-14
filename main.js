@@ -45,12 +45,16 @@ document.addEventListener('DOMContentLoaded', () => {
               <li>Evite produtos abrasivos ou excesso de água.</li>
             </ul>
             <a href="${product.link || '#contato'}" class="product-link" ${product.link ? 'target="_blank"' : ''}>
-              Solicitar Orçamento <i class="fas fa-arrow-right"></i>
+              Solicitar Orçamento <i data-lucide="arrow-right" style="width: 16px; height: 16px; margin-left: 6px;"></i>
             </a>
           </div>
         `;
         productsContainer.appendChild(card);
       });
+      // Inicializar ícones dinâmicos do Lucide
+      if (window.lucide) {
+        window.lucide.createIcons();
+      }
     } else {
       productsContainer.innerHTML = '<p>Nenhum produto encontrado no momento.</p>';
     }
@@ -89,13 +93,15 @@ document.addEventListener('DOMContentLoaded', () => {
       
       // Simulate API call
       setTimeout(() => {
-        btn.innerHTML = 'Solicitação Enviada! <i class="fas fa-check"></i>';
+        btn.innerHTML = 'Solicitação Enviada! <i data-lucide="check" style="margin-left: 8px;"></i>';
+        if (window.lucide) window.lucide.createIcons();
         btn.style.backgroundColor = '#2ecc71';
         btn.style.opacity = '1';
         
         setTimeout(() => {
           leadForm.reset();
           btn.innerHTML = originalText;
+          if (window.lucide) window.lucide.createIcons();
           btn.style.backgroundColor = '';
           btn.disabled = false;
         }, 3000);

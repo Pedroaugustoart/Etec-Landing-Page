@@ -1,0 +1,31 @@
+Last login: Tue Jul 14 14:32:37 on ttys000
+pedroaugusto@MacBook-Air-de-Pedro ~ % cd /Users/pedroaugusto/Documents/etec-landing-page
+pedroaugusto@MacBook-Air-de-Pedro etec-landing-page % npm run dev
+\
+> etec-landing-page@0.0.0 dev
+> vite
+
+
+  VITE v8.1.4  ready in 176 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

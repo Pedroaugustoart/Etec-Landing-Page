@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ETEC Acabamentos - Showroom Virtual</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <!-- Logo alinhada conforme nova referência -->
+        <a href="#" class="logo">
+          <span class="e">e</span><span class="tec">tec.</span>
+          <span class="logo-sub">ACABAMENTOS</span>
+        </a>
+        <div class="nav-links">
+          <a href="#diferenciais">Diferenciais</a>
+          <a href="#pisos">Pisos</a>
+          <a href="#solucoes">Soluções</a>
+          <a href="#contato" class="btn btn-primary" style="padding: 0.6rem 1.4rem; margin-left: 1rem;">Solicitar Visita</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="inicio">
+      <div class="hero-bg"></div>
+      <div class="container reveal">
+        <div class="hero-badge">
+          <i class="fas fa-star"></i> Alto Padrão em Acabamentos
+        </div>
+        <h1>Sonhar com <strong>luxo</strong> é fácil.<br>Realizar, mais ainda.</h1>
+        <p>Projetamos e construímos excelência do chão ao teto. O primeiro passo? Um estudo arquitetônico focado em valorizar seu imóvel com as melhores linhas Eucafloor, Drywall e Gesso.</p>
+        <div class="hero-buttons">
+          <a href="#pisos" class="btn btn-primary">Ver Showroom</a>
+          <a href="#contato" class="btn btn-outline">Agendar uma visita</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Diferenciais -->
+    <section class="differentials section-padding" id="diferenciais">
+      <div class="container reveal">
+        <span class="section-subtitle">Diferenciais ETEC</span>
+        <h2>Conheça os <strong>nossos diferenciais</strong></h2>
+        
+        <div class="diff-grid">
+          <div class="diff-card">
+            <div class="diff-icon"><i class="fas fa-hammer"></i></div>
+            <h3>Agilidade com Método</h3>
+            <p>Planejamento por etapas cronograma físico-financeiro e detalhamento de cada fase. Entregamos a obra no prazo, sem atrasos e sem dores de cabeça.</p>
+          </div>
+          <div class="diff-card">
+            <div class="diff-icon"><i class="fas fa-user-tie"></i></div>
+            <h3>Atendimento Individual e Humanizado</h3>
+            <p>Canal de suporte direto com os especialistas da obra. Feedbacks programados e acompanhamento fotográfico do avanço de cada serviço.</p>
+          </div>
+          <div class="diff-card">
+            <div class="diff-icon"><i class="fas fa-clipboard-check"></i></div>
+            <h3>Garantia Pós-Obra</h3>
+            <p>Entrega com manual final e certificados de garantia. Respaldo técnico integral para preservar a estética e qualidade do seu patrimônio.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pisos Section -->
+    <section class="showroom section-padding" id="pisos">
+      <div class="container reveal">
+        <span class="section-subtitle">Catálogo Digital</span>
+        <h2>Cada detalhe <strong>pensado para você</strong></h2>
+        <p>Apresentamos tendências que combinam design impecável com execução de excelência.</p>
+        
+        <!-- Products will be injected here by JS -->
+        <div class="products-grid" id="products-container">
+          <p>Carregando produtos do distribuidor...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Soluções (Drywall & Gesso) -->
+    <section class="services section-padding" id="solucoes">
+      <div class="container reveal">
+        <span class="section-subtitle">Soluções Sob Medida</span>
+        <h2 style="margin-bottom: 4rem;">Construção e reforma <strong>sob medida para você:</strong></h2>
+
+        <!-- Drywall -->
+        <div class="service-row">
+          <div class="service-content">
+            <h3>Arquitetura em <strong>Drywall</strong></h3>
+            <p>Sistemas construtivos a seco que oferecem agilidade e conforto termoacústico superior. Ideal para divisórias de alto padrão, isolamento e reformas limpas.</p>
+            
+            <div class="service-features">
+              <div class="feature-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Execução Rápida</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Isolamento Acústico</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Projetos 3D</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Sustentabilidade</span>
+              </div>
+            </div>
+            
+            <a href="#contato" class="btn btn-outline">Solicitar Orçamento Técnico</a>
+          </div>
+          <div class="service-image">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1931&auto=format&fit=crop" alt="Estrutura de Drywall">
+          </div>
+        </div>
+
+        <!-- Gesso -->
+        <div class="service-row reverse reveal">
+          <div class="service-content">
+            <h3>Acabamentos em <strong>Gesso</strong></h3>
+            <p>Trabalhamos com forros decorados, sancas iluminadas e painéis 3D que valorizam a arquitetura de interiores e criam atmosferas luxuosas e únicas.</p>
+            
+            <div class="service-features">
+              <div class="feature-item">
+                <i class="fas fa-lightbulb"></i>
+                <span>Sancas Iluminadas</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-layer-group"></i>
+                <span>Molduras 3D</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-level-down-alt"></i>
+                <span>Rebaixamento</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-gem"></i>
+                <span>Alto Acabamento</span>
+              </div>
+            </div>
+            
+            <a href="#contato" class="btn btn-outline">Consultar Especialista</a>
+          </div>
+          <div class="service-image">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop" alt="Teto com acabamento em Gesso">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section-padding" id="contato">
+      <div class="container reveal">
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <span class="section-subtitle">Contato Direto</span>
+            <h2>Sua visão, nossa <strong>realidade</strong></h2>
+            <p>Valorizamos cada detalhe com foco na valorização do seu imóvel e na segurança patrimonial. Entregamos uma arquitetura que combina estética e engenharia de excelência.</p>
+            
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                <div>
+                  <small style="color: var(--color-text-muted);">WhatsApp / Telefone</small><br>
+                  <strong>+55 (11) 99999-9999</strong>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                <div>
+                  <small style="color: var(--color-text-muted);">E-mail Comercial</small><br>
+                  <strong>comercial@etecacabamentos.com.br</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-form">
+            <form id="leadForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Seu Nome" required>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Empresa (Opcional)">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <input type="email" class="form-control" placeholder="E-mail" required>
+                </div>
+                <div class="form-group">
+                  <input type="tel" class="form-control" placeholder="WhatsApp" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <select class="form-control" required style="appearance: none; background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23a1a1aa%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'); background-repeat: no-repeat; background-position: right 1.2rem top 50%; background-size: 0.65rem auto;">
+                  <option value="" disabled selected>Selecione o segmento</option>
+                  <option value="pisos">Pisos Laminados / Vinílicos</option>
+                  <option value="drywall">Projeto em Drywall</option>
+                  <option value="gesso">Acabamentos de Gesso</option>
+                  <option value="projeto_completo">Reforma Completa</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" placeholder="Mensagem / Observações da obra" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Transforme sua realidade com ETEC <i class="fas fa-arrow-right" style="margin-left: 8px;"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container footer-content">
+        <a href="#" class="logo">
+          <span class="e">e</span><span class="tec">tec.</span>
+          <span class="logo-sub">ACABAMENTOS</span>
+        </a>
+        <p class="copyright">&copy; 2026 ETEC Acabamentos. O luxo acessível.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

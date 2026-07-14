@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
               <li style="margin-bottom: 4px;">Limpeza com pano úmido e detergente neutro.</li>
               <li>Evite produtos abrasivos ou excesso de água.</li>
             </ul>
-            <a href="${product.link || '#contato'}" class="product-link" ${product.link ? 'target="_blank"' : ''}>
+            <a href="https://wa.me/5567992250875?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20piso%20${encodeURIComponent(product.name)}." class="product-link" target="_blank">
               Solicitar Orçamento <i data-lucide="arrow-right" style="width: 16px; height: 16px; margin-left: 6px;"></i>
             </a>
           </div>
@@ -84,27 +84,38 @@ document.addEventListener('DOMContentLoaded', () => {
   if (leadForm) {
     leadForm.addEventListener('submit', (e) => {
       e.preventDefault();
+      const nome = document.getElementById('form-nome').value;
+      const empresa = document.getElementById('form-empresa').value;
+      const telefone = document.getElementById('form-telefone').value;
+      const segmento = document.getElementById('form-segmento');
+      const segmentoText = segmento.options[segmento.selectedIndex].text;
+      const mensagem = document.getElementById('form-mensagem').value;
+
+      let text = `Olá! Vim pelo site e gostaria de solicitar um orçamento.\n\n`;
+      text += `*Nome:* ${nome}\n`;
+      if (empresa) text += `*Empresa:* ${empresa}\n`;
+      text += `*Telefone:* ${telefone}\n`;
+      text += `*Segmento:* ${segmentoText}\n`;
+      text += `*Mensagem:* ${mensagem}`;
+
+      const whatsappUrl = `https://wa.me/5567992250875?text=${encodeURIComponent(text)}`;
+      
       const btn = leadForm.querySelector('button[type="submit"]');
       const originalText = btn.innerHTML;
       
-      btn.innerHTML = 'Enviando...';
-      btn.style.opacity = '0.7';
+      btn.innerHTML = 'Redirecionando para WhatsApp <i data-lucide="check" style="margin-left: 8px;"></i>';
+      if (window.lucide) window.lucide.createIcons();
+      btn.style.backgroundColor = '#2ecc71';
+      btn.style.opacity = '1';
       btn.disabled = true;
       
-      // Simulate API call
       setTimeout(() => {
-        btn.innerHTML = 'Solicitação Enviada! <i data-lucide="check" style="margin-left: 8px;"></i>';
+        window.open(whatsappUrl, '_blank');
+        leadForm.reset();
+        btn.innerHTML = originalText;
         if (window.lucide) window.lucide.createIcons();
-        btn.style.backgroundColor = '#2ecc71';
-        btn.style.opacity = '1';
-        
-        setTimeout(() => {
-          leadForm.reset();
-          btn.innerHTML = originalText;
-          if (window.lucide) window.lucide.createIcons();
-          btn.style.backgroundColor = '';
-          btn.disabled = false;
-        }, 3000);
+        btn.style.backgroundColor = '';
+        btn.disabled = false;
       }, 1500);
     });
   }

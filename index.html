@@ -23,7 +23,7 @@
           <a href="#diferenciais">Diferenciais</a>
           <a href="#pisos">Pisos</a>
           <a href="#solucoes">Soluções</a>
-          <a href="#contato" class="btn btn-primary" style="padding: 0.6rem 1.4rem; margin-left: 1rem;">Solicitar Visita</a>
+          <a href="https://wa.me/5567992250875?text=Olá!%20Gostaria%20de%20solicitar%20uma%20visita." class="btn btn-primary" style="padding: 0.6rem 1.4rem; margin-left: 1rem;" target="_blank">Solicitar Visita</a>
         </div>
       </div>
     </nav>
@@ -39,7 +39,7 @@
         <p>Projetamos e construímos excelência do chão ao teto. O primeiro passo? Um estudo arquitetônico focado em valorizar seu imóvel com as melhores linhas Eucafloor, Drywall e Gesso.</p>
         <div class="hero-buttons">
           <a href="#pisos" class="btn btn-primary">Ver Showroom</a>
-          <a href="#contato" class="btn btn-outline">Solicitar Orçamento</a>
+          <a href="https://wa.me/5567992250875?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20orçamento." class="btn btn-outline" target="_blank">Solicitar Orçamento</a>
         </div>
       </div>
     </header>
@@ -147,7 +147,7 @@
               </div>
             </div>
             
-            <a href="#contato" class="btn btn-outline">Solicitar Orçamento</a>
+            <a href="https://wa.me/5567992250875?text=Olá!%20Tenho%20interesse%20em%20um%20projeto%20de%20Drywall." class="btn btn-outline" target="_blank">Solicitar Orçamento</a>
           </div>
           <div class="service-image">
             <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1931&auto=format&fit=crop" alt="Estrutura de Drywall">
@@ -179,7 +179,7 @@
               </div>
             </div>
             
-            <a href="#contato" class="btn btn-outline">Solicitar Orçamento</a>
+            <a href="https://wa.me/5567992250875?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20acabamentos%20em%20Gesso." class="btn btn-outline" target="_blank">Solicitar Orçamento</a>
           </div>
           <div class="service-image">
             <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop" alt="Teto com acabamento em Gesso">
@@ -219,17 +219,17 @@
             <form id="leadForm">
               <div class="form-row">
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Seu Nome" required>
+                  <input type="text" id="form-nome" class="form-control" placeholder="Seu Nome" required>
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Empresa (Opcional)">
+                  <input type="text" id="form-empresa" class="form-control" placeholder="Empresa (Opcional)">
                 </div>
               </div>
               <div class="form-group">
-                <input type="tel" class="form-control" placeholder="Telefone" required>
+                <input type="tel" id="form-telefone" class="form-control" placeholder="Telefone" required>
               </div>
               <div class="form-group">
-                <select class="form-control" required style="appearance: none; background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23b5b5c3%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'); background-repeat: no-repeat; background-position: right 1.2rem top 50%; background-size: 0.65rem auto;">
+                <select id="form-segmento" class="form-control" required style="appearance: none; background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23b5b5c3%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'); background-repeat: no-repeat; background-position: right 1.2rem top 50%; background-size: 0.65rem auto;">
                   <option value="" disabled selected>Selecione o segmento</option>
                   <option value="pisos">Pisos Laminados / Vinílicos</option>
                   <option value="drywall">Projeto em Drywall</option>
@@ -238,7 +238,7 @@
                 </select>
               </div>
               <div class="form-group">
-                <textarea class="form-control" placeholder="Mensagem / Observações da obra" required></textarea>
+                <textarea id="form-mensagem" class="form-control" placeholder="Mensagem / Observações da obra" required></textarea>
               </div>
               <button type="submit" class="btn btn-primary">Transforme sua realidade com ETEC <i data-lucide="arrow-right"></i></button>
             </form>
